@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>terminus</id>
+    <version>1.0.87</version>
+    <title>Terminus (Install)</title>
+    <owners>Hadrien Dussuel, William Darian</owners>
+    <authors>Eugene Pankov (and contributors)</authors>
+    <licenseUrl>https://github.com/Eugeny/terminus/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://eugeny.github.io/terminus/</projectUrl>
+    <iconUrl>https://github.com/risk1996/au-packages/terminus/icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+**Terminus** is a highly configurable terminal emulator for Windows, macOS and Linux
+
+  * Theming and color schemes
+  * Fully configurable shortcuts
+  * Split panes
+  * Remembers your tabs
+  * PowerShell (and PS Core), WSL, Git-Bash, Cygwin, Cmder and CMD support
+  * Integrated SSH client and connection manager
+  * Full Unicode support including double-width characters
+  * Doesn't choke on fast-flowing outputs
+  * Proper shell experience on Windows including tab completion (via Clink)
+    </description>
+    <summary>A terminal for a more modern age</summary>
+    <releaseNotes>https://github.com/Eugeny/terminus/releases</releaseNotes>
+    <copyright>© Eugene Pankov</copyright>
+    <tags>terminal console windows</tags>
+    <packageSourceUrl>https://github.com/risk1996/au-packages/terminus</packageSourceUrl>
+    <projectSourceUrl>https://github.com/Eugeny/terminus</projectSourceUrl>
+    <docsUrl>https://github.com/Eugeny/terminus/wiki</docsUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
