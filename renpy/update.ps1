@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'https://github.com/Eugeny/terminus/releases'
+$releases = 'https://www.renpy.org/latest.html'
 
 function global:au_SearchReplace {
    @{
@@ -14,11 +14,11 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
-    $url32   = $download_page.links | ? href -match 'setup\.exe$' | % href | Select-Object -First 1
-    $version = (Split-Path ( Split-Path $url32 ) -Leaf).Substring(1)
+    $url32   = $download_page.links | ? href -match '\.7z\.exe$' | % href | Select-Object -First 1
+    $version = Split-Path ( Split-Path $url32 ) -Leaf
 
     @{
-        URL32   = 'https://github.com' + $url32
+        URL32   = $url32
         Version = $version
     }
 }

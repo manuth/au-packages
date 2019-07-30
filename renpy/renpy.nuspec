@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>renpy</id>
+    <version>7.3.2</version>
+    <title>Ren'Py (Install)</title>
+    <owners>William Darian</owners>
+    <authors>Tom "PyTom" Rothamel, Andy_kl, Arda Güler, DragoonHP, Jan Beich, Kobaltcore, Lee Yunseok, Mal Graty, Moshibit, Nyaatrap, Pionere, Sylvain Beucler</authors>
+    <licenseUrl>https://www.renpy.org/doc/html/license.html</licenseUrl>
+    <projectUrl>https://www.renpy.org</projectUrl>
+    <iconUrl>https://www.renpy.org/static/index-logo.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+Ren'Py is a visual novel engine – used by thousands of creators from around the world – that helps you use words, images, and sounds to tell interactive stories that run on computers and mobile devices. These can be both visual novels and life simulation games. The easy to learn script language allows anyone to efficiently write large visual novels, while its Python scripting is enough for complex simulation games.
+
+Ren'Py is open source and free for commercial use.
+    </description>
+    <summary>The Ren'Py Visual Novel Engine</summary>
+    <releaseNotes>https://www.renpy.org/doc/html/changelog.html</releaseNotes>
+    <copyright>Copyright © 2004-2019 Tom Rothamel=</copyright>
+    <tags>vn visual novel game engine</tags>
+    <packageSourceUrl>https://github.com/risk1996/au-packages/renpy</packageSourceUrl>
+    <projectSourceUrl>https://github.com/renpy/renpy</projectSourceUrl>
+    <docsUrl>https://www.renpy.org/doc/html/</docsUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
