@@ -20,7 +20,7 @@ Ren'Py is open source and free for commercial use.
     <releaseNotes>https://www.renpy.org/doc/html/changelog.html</releaseNotes>
     <copyright>Copyright © 2004-2019 Tom Rothamel=</copyright>
     <tags>vn visual novel game engine</tags>
-    <packageSourceUrl>https://github.com/risk1996/au-packages/renpy</packageSourceUrl>
+    <packageSourceUrl>https://github.com/risk1996/au-packages/tree/master/renpy</packageSourceUrl>
     <projectSourceUrl>https://github.com/renpy/renpy</projectSourceUrl>
     <docsUrl>https://www.renpy.org/doc/html/</docsUrl>
   </metadata>

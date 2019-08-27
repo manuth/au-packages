@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>terminus</id>
-    <version>1.0.87</version>
+    <version>1.0.88</version>
     <title>Terminus (Install)</title>
     <owners>Hadrien Dussuel, William Darian</owners>
     <authors>Eugene Pankov (and contributors)</authors>
