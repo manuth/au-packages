@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>libresprite</id>
+    <version>1.0</version>
+    <title>LibreSprite (Install)</title>
+    <owners>William Darian</owners>
+    <authors>David Capello, Ilija Melentijevic, LibreSprite contributors</authors>
+    <licenseUrl>https://github.com/LibreSprite/LibreSprite/blob/master/LICENSE.txt</licenseUrl>
+    <projectUrl>https://libresprite.github.io</projectUrl>
+    <iconUrl>https://libresprite.github.io/assets/libresprite.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+LibreSprite is a free and open source program for creating and animating your sprites.
+
+Features
+- Real-time animation previews.
+- Onion skinning.
+- Multiple sprites can be edited at once.
+- Ready to use palettes, or make your own.
+- Sprites are composed of both layers &amp; frames.
+- Tiled drawing mode, useful to draw patterns and textures.
+- Pixel precise tools like filled contour, polygon, shading mode, etc.
+- Several file types supported for your sprites and animations.
+    </description>
+    <summary>LibreSprite is a free and open source program for creating and animating your sprites.</summary>
+    <releaseNotes>https://github.com/LibreSprite/LibreSprite/commits/master</releaseNotes>
+    <copyright>Copyright © 2001-2016 David Capello, 2016-2018 LibreSprite contributors</copyright>
+    <tags>pixel art tool graphics animated sprite editor</tags>
+    <packageSourceUrl>https://github.com/risk1996/au-packages/tree/master/libresprite</packageSourceUrl>
+    <projectSourceUrl>https://github.com/LibreSprite/LibreSprite</projectSourceUrl>
+    <!-- <docsUrl></docsUrl> -->
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
