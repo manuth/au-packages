@@ -1,4 +1,4 @@
-$ErrorActionPreference = 'Stop';
+﻿$ErrorActionPreference = 'Stop';
 $toolsPath = Split-Path $MyInvocation.MyCommand.Definition;
 
 $archiveArgs = @{
@@ -9,8 +9,12 @@ $archiveArgs = @{
   unzipLocation = $toolsPath
 }
 
+# The renpy installer is a `7z`-package wrapped in a self extracting archive.
+# Cause of the architecture of such an sfx archive, these files safely can be unzipped using 7-zip
 Install-ChocolateyZipPackage @archiveArgs
 
+# ShimGen will add an executable file to `PATH` for each `.exe`-file in this package.
+# This step ensures that all unnecessary executables are ignored by adding a `{ExeFileName}.ignore` file.
 $exeFiles = Get-ChildItem $toolsPath -Recurse -Filter *.exe
 
 $entryPoints = @(
