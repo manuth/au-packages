@@ -10,3 +10,14 @@ $archiveArgs = @{
 }
 
 Install-ChocolateyZipPackage @archiveArgs
+
+$exeFiles = Get-ChildItem $toolsPath -Recurse -Filter *.exe
+
+$entryPoints = @(
+  $(Get-ChildItem $(Join-Path $toolsPath "renpy*/renpy.exe")).FullName);
+
+foreach ($exeFile in $exeFiles) {
+  if (-not $entryPoints.Contains($exeFile.FullName)) {
+    New-Item -ItemType File "$($exeFile.FullName).ignore"
+  }
+}
