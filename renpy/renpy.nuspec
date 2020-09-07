@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>renpy</id>
-    <version>7.3.5</version>
+    <version>7.3.5.1</version>
     <title>Ren'Py (Install)</title>
     <owners>William Darian</owners>
     <authors>Tom "PyTom" Rothamel, Andy_kl, Arda Güler, DragoonHP, Jan Beich, Kobaltcore, Lee Yunseok, Mal Graty, Moshibit, Nyaatrap, Pionere, Sylvain Beucler</authors>
