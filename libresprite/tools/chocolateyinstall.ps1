@@ -7,7 +7,7 @@ $packageArgs = @{
   softwareName  = 'libresprite*'
   checksum      = '0b97559ddb9979f67836941b52caadafba37c22b639aa8bc0643cd17916a5324'
   checksumType  = 'sha256'
-  silentArgs    = "-y -gm2"
+  silentArgs    = "/s"
   validExitCodes= @(0)
 }
 

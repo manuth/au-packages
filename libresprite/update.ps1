@@ -15,11 +15,11 @@ function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
     $url32   = $download_page.links | ? href -match '\.exe$' | % href | Select-Object -First 1
-    # $version = Split-Path ( Split-Path $url32 ) -Leaf
+    $version = '1.0'
 
     @{
         URL32   = $url32
-        Version = '1.0'
+        Version = $version
     }
 }
 
