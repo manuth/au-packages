@@ -1,10 +1,10 @@
-$ErrorActionPreference = 'Stop';
+﻿$ErrorActionPreference = 'Stop';
 $toolsPath = Split-Path $MyInvocation.MyCommand.Definition;
 
 $archiveArgs = @{
   packageName   = 'renpy'
-  url           = 'https://www.renpy.org/dl/7.3.5/renpy-7.3.5-sdk.7z.exe'
-  checksum      = '3f2760be6c8b36698308470947783b1f5ce7ebcb4e2ae6bf2761212f5c925823'
+  url           = 'https://www.renpy.org/dl/7.4.0/renpy-7.4.0-sdk.7z.exe'
+  checksum      = '6693256c21f6f7d277b1fc7d1ed24fa3170cfdf1d2371d1235b87e801fddcbd2'
   checksumType  = 'sha256'
   unzipLocation = $toolsPath
 };
