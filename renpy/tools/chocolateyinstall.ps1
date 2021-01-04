@@ -17,8 +17,10 @@ Install-ChocolateyZipPackage @archiveArgs;
 # This step ensures that all unnecessary executables are ignored by adding a `{ExeFileName}.ignore` file.
 $exeFiles = Get-ChildItem $toolsPath -Recurse -Filter *.exe;
 
+$mainEntryPoint = $(Get-ChildItem $(Join-Path $toolsPath "renpy*/renpy.exe")).FullName;
+
 $entryPoints = @(
-  $(Get-ChildItem $(Join-Path $toolsPath "renpy*/renpy.exe")).FullName);
+  $mainEntryPoint);
 
 foreach ($exeFile in $exeFiles) {
   $ignoreFileName = "$($exeFile.FullName).ignore";
@@ -29,3 +31,7 @@ foreach ($exeFile in $exeFiles) {
       New-Item -ItemType File $ignoreFileName;
   }
 }
+
+Install-ChocolateyShortcut `
+  -ShortcutFilePath $(Join-Path -Path $([System.Environment]::GetFolderPath("CommonStartMenu")) -ChildPath $([string]::Join([System.IO.Path]::DirectorySeparatorChar, @("Programs", "Ren'Py.lnk")))) `
+  -TargetPath $mainEntryPoint;
