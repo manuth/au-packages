@@ -21,7 +21,11 @@ $entryPoints = @(
   $(Get-ChildItem $(Join-Path $toolsPath "renpy*/renpy.exe")).FullName);
 
 foreach ($exeFile in $exeFiles) {
-  if (-not $entryPoints.Contains($exeFile.FullName)) {
-    New-Item -ItemType File "$($exeFile.FullName).ignore";
+  $ignoreFileName = "$($exeFile.FullName).ignore";
+
+  if (
+    -not $entryPoints.Contains($exeFile.FullName) -and
+    -not $(Test-Path $ignoreFileName)) {
+      New-Item -ItemType File $ignoreFileName;
   }
 }
